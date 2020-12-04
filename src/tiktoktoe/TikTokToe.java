@@ -24,7 +24,7 @@ public class TikTokToe {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Yeetabix's Tik Tok Toe");
 		System.out.println("---------------------------------");
-		System.out.println("Player one's counter is O, Player two's counter is X");
+		System.out.println("Player one's counter is 0, Player two's counter is X");
 		System.out.println("Select a number to set the box to your counter");
 
 		initalizeBoard();
@@ -82,27 +82,24 @@ public class TikTokToe {
 			} else {
 				retry = 2;
 			}
-			System.out.println(board[0][0] + " | " + board[0][1] + " | " + board[0][2]);
-			System.out.println("--+---+--");
-			System.out.println(board[1][0] + " | " + board[1][1] + " | " + board[1][2]);
-			System.out.println("--+---+--");
-			System.out.println(board[2][0] + " | " + board[2][1] + " | " + board[2][2]);
 
-			if (board[0][0].equalsIgnoreCase("x") && (board[0][1].equalsIgnoreCase("x")) && (board[0][2].equalsIgnoreCase("x"))) {
+			PrintBoard();
+
+			if (board[0][0].equalsIgnoreCase(user) && (board[0][1].equalsIgnoreCase(user)) && (board[0][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[1][0].equalsIgnoreCase("x") && (board[1][1].equalsIgnoreCase("x")) && (board[1][2].equalsIgnoreCase("x"))) {
+			} else if (board[1][0].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[1][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[2][0].equalsIgnoreCase("x") && (board[2][1].equalsIgnoreCase("x")) && (board[2][2].equalsIgnoreCase("x"))) {
+			} else if (board[2][0].equalsIgnoreCase(user) && (board[2][1].equalsIgnoreCase(user)) && (board[2][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][0].equalsIgnoreCase("x") && (board[1][0].equalsIgnoreCase("x")) && (board[2][0].equalsIgnoreCase("x"))) {
+			} else if (board[0][0].equalsIgnoreCase(user) && (board[1][0].equalsIgnoreCase(user)) && (board[2][0].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][1].equalsIgnoreCase("x") && (board[1][1].equalsIgnoreCase("x")) && (board[2][1].equalsIgnoreCase("x"))) {
+			} else if (board[0][1].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[2][1].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][2].equalsIgnoreCase("x") && (board[1][2].equalsIgnoreCase("x")) && (board[2][2].equalsIgnoreCase("x"))) {
+			} else if (board[0][2].equalsIgnoreCase(user) && (board[1][2].equalsIgnoreCase(user)) && (board[2][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][0].equalsIgnoreCase("x") && (board[1][1].equalsIgnoreCase("x")) && (board[2][2].equalsIgnoreCase("x"))) {
+			} else if (board[0][0].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[2][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][2].equalsIgnoreCase("x") && (board[1][1].equalsIgnoreCase("x")) && (board[2][0].equalsIgnoreCase("x"))) {
+			} else if (board[0][2].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[2][0].equalsIgnoreCase(user))) {
 				won = 1;
 			} else if (counter == 8) {
 				System.out.println("Its a Draw!");
@@ -122,27 +119,24 @@ public class TikTokToe {
 			} else {
 				retry = 1;
 			}
-			System.out.println(board[0][0] + " | " + board[0][1] + " | " + board[0][2]);
-			System.out.println("--+---+--");
-			System.out.println(board[1][0] + " | " + board[1][1] + " | " + board[1][2]);
-			System.out.println("--+---+--");
-			System.out.println(board[2][0] + " | " + board[2][1] + " | " + board[2][2]);
 
-			if (board[0][0].equalsIgnoreCase("x") && (board[0][1].equalsIgnoreCase("x")) && (board[0][2].equalsIgnoreCase("x"))) {
+			PrintBoard();
+
+			if (board[0][0].equalsIgnoreCase(user) && (board[0][1].equalsIgnoreCase(user)) && (board[0][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[1][0].equalsIgnoreCase("O") && (board[1][1].equalsIgnoreCase("O")) && (board[1][2].equalsIgnoreCase("O"))) {
+			} else if (board[1][0].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[1][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[2][0].equalsIgnoreCase("O") && (board[2][1].equalsIgnoreCase("O")) && (board[2][2].equalsIgnoreCase("O"))) {
+			} else if (board[2][0].equalsIgnoreCase(user) && (board[2][1].equalsIgnoreCase(user)) && (board[2][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][0].equalsIgnoreCase("O") && (board[1][0].equalsIgnoreCase("O")) && (board[2][0].equalsIgnoreCase("O"))) {
+			} else if (board[0][0].equalsIgnoreCase(user) && (board[1][0].equalsIgnoreCase(user)) && (board[2][0].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][1].equalsIgnoreCase("O") && (board[1][1].equalsIgnoreCase("O")) && (board[2][1].equalsIgnoreCase("O"))) {
+			} else if (board[0][1].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[2][1].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][2].equalsIgnoreCase("O") && (board[1][2].equalsIgnoreCase("O")) && (board[2][2].equalsIgnoreCase("O"))) {
+			} else if (board[0][2].equalsIgnoreCase(user) && (board[1][2].equalsIgnoreCase(user)) && (board[2][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][0].equalsIgnoreCase("O") && (board[1][1].equalsIgnoreCase("O")) && (board[2][2].equalsIgnoreCase("O"))) {
+			} else if (board[0][0].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[2][2].equalsIgnoreCase(user))) {
 				won = 1;
-			} else if (board[0][2].equalsIgnoreCase("O") && (board[1][1].equalsIgnoreCase("O")) && (board[2][0].equalsIgnoreCase("O"))) {
+			} else if (board[0][2].equalsIgnoreCase(user) && (board[1][1].equalsIgnoreCase(user)) && (board[2][0].equalsIgnoreCase(user))) {
 				won = 1;
 			} else if (counter == 8) {
 				System.out.println("Its a Draw!");
@@ -158,8 +152,8 @@ public class TikTokToe {
 			switch (box) {
 
 			case 1:
-				if (board[0][0].equalsIgnoreCase("O") || board[0][0].equalsIgnoreCase("X")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[0][0].equalsIgnoreCase("0") || board[0][0].equalsIgnoreCase("X")) {
+					System.out.println("Box 1 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					
@@ -168,8 +162,8 @@ public class TikTokToe {
 				}
 				break;
 			case 2:
-				if (board[0][1].equalsIgnoreCase("O") || board[0][1].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[0][1].equalsIgnoreCase("0") || board[0][1].equalsIgnoreCase("x")) {
+					System.out.println("Box 2 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[0][1] = user;
@@ -177,8 +171,8 @@ public class TikTokToe {
 				}
 				break;
 			case 3:
-				if (board[0][2].equalsIgnoreCase("O") || board[0][2].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[0][2].equalsIgnoreCase("0") || board[0][2].equalsIgnoreCase("x")) {
+					System.out.println("Box 3 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[0][2] = user;
@@ -186,8 +180,8 @@ public class TikTokToe {
 				}
 				break;
 			case 4:
-				if (board[1][0].equalsIgnoreCase("O") || board[1][0].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[1][0].equalsIgnoreCase("0") || board[1][0].equalsIgnoreCase("x")) {
+					System.out.println("Box 4 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[1][0] = user;
@@ -195,8 +189,8 @@ public class TikTokToe {
 				}
 				break;
 			case 5:
-				if (board[1][1].equalsIgnoreCase("O") || board[1][1].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[1][1].equalsIgnoreCase("0") || board[1][1].equalsIgnoreCase("x")) {
+					System.out.println("Box 5 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[1][1] = user;
@@ -204,8 +198,8 @@ public class TikTokToe {
 				}
 				break;
 			case 6:
-				if (board[1][2].equalsIgnoreCase("O") || board[1][2].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[1][2].equalsIgnoreCase("0") || board[1][2].equalsIgnoreCase("x")) {
+					System.out.println("Box 6 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[1][2] = user;
@@ -213,8 +207,8 @@ public class TikTokToe {
 				}
 				break;
 			case 7:
-				if (board[2][0].equalsIgnoreCase("O") || board[2][0].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[2][0].equalsIgnoreCase("0") || board[2][0].equalsIgnoreCase("x")) {
+					System.out.println("Box 7 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[2][0] = user;
@@ -222,8 +216,8 @@ public class TikTokToe {
 				}
 				break;
 			case 8:
-				if (board[2][1].equalsIgnoreCase("O") || board[2][1].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[2][1].equalsIgnoreCase("0") || board[2][1].equalsIgnoreCase("x")) {
+					System.out.println("Box 8 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 					board[2][1] = user;
@@ -231,8 +225,8 @@ public class TikTokToe {
 				}
 				break;
 			case 9:
-				if (board[2][2].equalsIgnoreCase("O") || board[2][2].equalsIgnoreCase("x")) {
-					System.out.println("Select a box that has not been used already!");
+				if (board[2][2].equalsIgnoreCase("0") || board[2][2].equalsIgnoreCase("x")) {
+					System.out.println("Box 9 has already been filled,\nPlease select a box that has not already been used!");
 					turn = 1;
 				} else {
 
